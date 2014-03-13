@@ -1,16 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[safiye sepetçi]]></title>
   <link href="http://safiyesepetci.github.io/atom.xml" rel="self"/>
   <link href="http://safiyesepetci.github.io/"/>
-  <updated>2014-03-13T08:00:00+02:00</updated>
+  <updated>2014-03-13T08:31:45+02:00</updated>
   <id>http://safiyesepetci.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[safiye]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Sass Nedir? Nasıl Kullanılır?]]></title>
+    <link href="http://safiyesepetci.github.io/blog/2014/03/13/sass/"/>
+    <updated>2014-03-13T08:10:44+02:00</updated>
+    <id>http://safiyesepetci.github.io/blog/2014/03/13/sass</id>
+    <content type="html"><![CDATA[<p>Sass genel olarak css derleyicisidir. Css sayesinde var olmuş fakat css’i teknik olarak geçmeyi başarmıştır. Nasıl geçmiş kısaca özetliyorum;</p>
+
+<p>-Css’in değişken tanımlanılabilinen hali,</p>
+
+<p>-Css’in tarayıcılar için yazdığımız ekstra kodları kendisi oluşturabilen hali,</p>
+
+<p>-Css’in girintileri fark ederek iç içe class’ları yazabilen hali.</p>
+
+<p>Bunlar gayet vurucu oldu bence. Şimdide daha teknik artılarını açıklamaya çalışacağım.</p>
+
+<p><strong>Özellikleri</strong></p>
+
+<p><strong>Variables:</strong> Sass’ta değişken tanımlayabildiğimizi söylemiştik. Örneğe bakalım.</p>
+
+<p>Değişkenleri tanımlıyoruz.</p>
+
+<pre><code>$header-font-style:  Helvetica, sans-serif
+$header-color: #000
+</code></pre>
+
+<p>Değişkenleri kullanıyoruz.</p>
+
+<pre><code>.header
+  font: $header-font-style
+  color: $header-color
+</code></pre>
+
+<p><strong>Nesting:</strong> Nesne girintilerine göre kod yazmak.</p>
+
+<pre><code>#nav
+  ul
+   color: red
+  li
+   color: blue
+  a
+   color: green
+</code></pre>
+
+<p>Css çıktısı:</p>
+
+<pre><code>#nav ul {
+color: red;
+}
+#nav li {
+color: blue;
+}
+#nav a {
+color: green;
+}
+</code></pre>
+
+<p><strong>Partials ve @import:</strong> Kodlarımızı bölümleyip istediğimiz yerde import edebiliyoruz.</p>
+
+<pre><code>/* _reset.scss */
+body, html, ul, li {
+margin: 0
+padding: 0
+}
+</code></pre>
+
+<p>Bu dosyayı asıl stil dosyamıza dahil edelim.</p>
+
+<pre><code>/* base.scss */
+@import 'reset'
+</code></pre>
+
+<p><strong>Mixins:</strong> bu özellik sayesinde css3 ün hayatımızı zor bir yoldan kolaylaştıran özelliklerini sıkılmadan uygulayabileceğiz.</p>
+
+<pre><code>@mixin border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  -ms-border-radius: $radius
+  -o-border-radius: $radius
+  border-radius: $radius
+</code></pre>
+
+<p>Mixin&#8217;i sass&#8217;da çağırıyoruz.</p>
+
+<pre><code> .box
+   @include border-radius(10px)
+</code></pre>
+
+<p>Bu mixin&#8217;inden sonra border-radius kullandığımızda ekstra kodları yazmamıza gerek yok.</p>
+
+<p><strong>Extend/Inheritance:</strong> class yada id&#8217;lerde kullandığımız özellikleri @extend özelliği ile bir sonraki class yada id mizin içinde kullanabiliyoruz.</p>
+
+<p>message class&#8217;ı için kodlarımız bunlar.</p>
+
+<pre><code>.message
+  border: 1px solid #ccc
+  padding: 10px
+  color: #333
+</code></pre>
+
+<p>Şimdide diğer class yada id&#8217;mizde bu kodları extend edelim.</p>
+
+<pre><code>.success
+  @extend .message
+  border-color: green
+
+.error
+  @extend .message
+  border-color: red
+</code></pre>
+
+<p><strong>Operators:</strong> css özelliklerini yazarken operatorleri kullanabileceğimizi biliyor muydunuz? :)</p>
+
+<pre><code>aside
+ float: right
+ width: 300px / 960px * 100%
+</code></pre>
+
+<p>Css çıktısı:</p>
+
+<pre><code>aside {
+ float: right;
+ width: 31.25%;
+  }
+</code></pre>
+]]></content>
+  </entry>
   
 </feed>
