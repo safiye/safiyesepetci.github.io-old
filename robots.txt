@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://safiyesepetci.github.io/sitemap.xml 
