@@ -3,9 +3,9 @@ layout: post
 title: "Sass - Parent Selectors"
 date: 2014-03-25 13:42:42 +0200
 comments: true
-categories: sass
+categories: sass , selectors
 ---
-### Sass'da seçiciler için stil yazarken, class isimlerinin gereksiz tekrarını engellemek için kullandığımız bir kaç yöntem var.
+Sass'da seçiciler için stil yazarken, class isimlerinin gereksiz tekrarını engellemek için kullandığımız bir kaç yöntem var.
 
 Birincisi link seçicilerinde kullandığımız &: ikilisi. a sınıfında efekt kullanacağımız zaman bu işimizi kolayşaltırıyor.
 
