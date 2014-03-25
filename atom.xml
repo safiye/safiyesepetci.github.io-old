@@ -4,7 +4,7 @@
   <title><![CDATA[safiye sepetçi]]></title>
   <link href="http://safiyesepetci.github.io/atom.xml" rel="self"/>
   <link href="http://safiyesepetci.github.io/"/>
-  <updated>2014-03-21T11:12:32+02:00</updated>
+  <updated>2014-03-25T14:20:08+02:00</updated>
   <id>http://safiyesepetci.github.io/</id>
   <author>
     <name><![CDATA[safiye]]></name>
@@ -12,6 +12,53 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Parent Selectors]]></title>
+    <link href="http://safiyesepetci.github.io/blog/2014/03/25/parent-selectors/"/>
+    <updated>2014-03-25T00:00:00+02:00</updated>
+    <id>http://safiyesepetci.github.io/blog/2014/03/25/parent-selectors</id>
+    <content type="html"><![CDATA[<p>Sass&#8217;da seçiciler için stil yazarken, class isimlerinin gereksiz tekrarını engellemek için kullandığımız bir kaç yöntem var.</p>
+
+<p>Birincisi link seçicilerinde kullandığımız &amp;: ikilisi. a sınıfında efekt kullanacağımız zaman bu işimizi kolayşaltırıyor.</p>
+
+<p>Örnek sass kodu:</p>
+
+<pre><code>  a
+    font-weight: bold
+    text-decoration: none
+    &amp;:hover
+      text-decoration: underline
+</code></pre>
+
+<p>Css çıktısı:</p>
+
+<pre><code>  a {
+    font-weight: bold;
+    text-decoration: none; }
+    a:hover {
+             text-decoration: underline;}
+</code></pre>
+
+<p>İkinci kullanımı daha temiz ve amacına uygun. &amp;&ndash; bu iki karekter bir üst sınıfın adını çağırıyor.</p>
+
+<p>Örnek sass kodu:</p>
+
+<pre><code>        #main
+          color: black
+          &amp;-sidebar
+            border: 1px solid
+</code></pre>
+
+<p>Css çıktısı:</p>
+
+<pre><code>    #main {
+      color: black; }
+      #main-sidebar {
+        border: 1px solid; }
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Sass Nedir? Nasıl Kullanılır?]]></title>
