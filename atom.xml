@@ -4,7 +4,7 @@
   <title><![CDATA[safiye sepetçi]]></title>
   <link href="http://safiyesepetci.github.io/atom.xml" rel="self"/>
   <link href="http://safiyesepetci.github.io/"/>
-  <updated>2014-03-25T14:20:08+02:00</updated>
+  <updated>2014-03-25T14:37:57+02:00</updated>
   <id>http://safiyesepetci.github.io/</id>
   <author>
     <name><![CDATA[safiye]]></name>
@@ -14,11 +14,20 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Parent Selectors]]></title>
+    <title type="html"><![CDATA[Parent]]></title>
+    <link href="http://safiyesepetci.github.io/blog/2014/03/25/parent/"/>
+    <updated>2014-03-25T14:29:36+02:00</updated>
+    <id>http://safiyesepetci.github.io/blog/2014/03/25/parent</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Sass - Parent Selectors]]></title>
     <link href="http://safiyesepetci.github.io/blog/2014/03/25/parent-selectors/"/>
-    <updated>2014-03-25T00:00:00+02:00</updated>
+    <updated>2014-03-25T13:42:42+02:00</updated>
     <id>http://safiyesepetci.github.io/blog/2014/03/25/parent-selectors</id>
-    <content type="html"><![CDATA[<p>Sass&#8217;da seçiciler için stil yazarken, class isimlerinin gereksiz tekrarını engellemek için kullandığımız bir kaç yöntem var.</p>
+    <content type="html"><![CDATA[<h3>Sass&#8217;da seçiciler için stil yazarken, class isimlerinin gereksiz tekrarını engellemek için kullandığımız bir kaç yöntem var.</h3>
 
 <p>Birincisi link seçicilerinde kullandığımız &amp;: ikilisi. a sınıfında efekt kullanacağımız zaman bu işimizi kolayşaltırıyor.</p>
 

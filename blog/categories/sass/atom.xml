@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Sass | safiye sepetçi]]></title>
+  <link href="http://safiyesepetci.github.io/blog/categories/sass/atom.xml" rel="self"/>
+  <link href="http://safiyesepetci.github.io/"/>
+  <updated>2014-03-25T14:37:57+02:00</updated>
+  <id>http://safiyesepetci.github.io/</id>
+  <author>
+    <name><![CDATA[safiye]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Sass - Parent Selectors]]></title>
+    <link href="http://safiyesepetci.github.io/blog/2014/03/25/parent-selectors/"/>
+    <updated>2014-03-25T13:42:42+02:00</updated>
+    <id>http://safiyesepetci.github.io/blog/2014/03/25/parent-selectors</id>
+    <content type="html"><![CDATA[<h3>Sass'da seçiciler için stil yazarken, class isimlerinin gereksiz tekrarını engellemek için kullandığımız bir kaç yöntem var.</h3>
+
+<p>Birincisi link seçicilerinde kullandığımız &amp;: ikilisi. a sınıfında efekt kullanacağımız zaman bu işimizi kolayşaltırıyor.</p>
+
+<p>Örnek sass kodu:</p>
+
+<pre><code>  a
+    font-weight: bold
+    text-decoration: none
+    &amp;:hover
+      text-decoration: underline
+</code></pre>
+
+<p>Css çıktısı:</p>
+
+<pre><code>  a {
+    font-weight: bold;
+    text-decoration: none; }
+    a:hover {
+             text-decoration: underline;}
+</code></pre>
+
+<p>İkinci kullanımı daha temiz ve amacına uygun. &amp;&ndash; bu iki karekter bir üst sınıfın adını çağırıyor.</p>
+
+<p>Örnek sass kodu:</p>
+
+<pre><code>        #main
+          color: black
+          &amp;-sidebar
+            border: 1px solid
+</code></pre>
+
+<p>Css çıktısı:</p>
+
+<pre><code>    #main {
+      color: black; }
+      #main-sidebar {
+        border: 1px solid; }
+</code></pre>
+]]></content>
+  </entry>
+  
+</feed>
