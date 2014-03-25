@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Sass | safiye sepetçi]]></title>
-  <link href="http://safiyesepetci.github.io/blog/categories/sass/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Selectors | safiye sepetçi]]></title>
+  <link href="http://safiyesepetci.github.io/blog/categories/selectors/atom.xml" rel="self"/>
   <link href="http://safiyesepetci.github.io/"/>
   <updated>2014-03-25T14:49:28+02:00</updated>
   <id>http://safiyesepetci.github.io/</id>
